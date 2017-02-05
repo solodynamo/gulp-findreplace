@@ -4,7 +4,7 @@
   "description": "Gulp plugin to find and replace stuff.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/jshint/bin/jshint index.js"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,8 @@
     "readable-stream": "^2.0.1",
     "replacestream": "^4.0.0",
     "through2": "~0.4.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.4"
   }
 }
