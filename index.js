@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var Transform = require('readable-stream/transform');
 var Readablee = require('readable-stream/readable');
@@ -29,7 +29,7 @@ module.exports = function(searchQuery, replacement) {
                 readable._read = function(size) {
                     var chunk = buffer.slice(0, size);
                     buffer = buffer.slice(size);
-                    var finished = (chunk.length == 0 && buffer.length == 0);
+                    var finished = (chunk.length === 0 && buffer.length === 0);
                     this.push(finished ? null : chunk);
                 };
                 return readable;
@@ -40,14 +40,14 @@ module.exports = function(searchQuery, replacement) {
                 if (file.isBuffer()) {
                     var createStream = Readable(file.contents);
                     createStream.on('error', function() {
-                        console.log("Error!!")
+                        console.log("Error!!");
                     });
                     file.contents = createStream;
                 }
                 streamingReplace();
                 callback(null, file);
             }
-            
+
             ensureStream();
         }
     });
