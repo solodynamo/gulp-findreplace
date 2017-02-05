@@ -1,9 +1,9 @@
 'use strict';
 
 var Transform = require('readable-stream/transform');
-var rs = require('replacestream');
-var through = require('through2');
 var Readablee = require('readable-stream/readable');
+var through = require('through2');
+var rs = require('replacestream');
 
 module.exports = function(searchQuery, replacement) {
     return new Transform({
@@ -14,7 +14,6 @@ module.exports = function(searchQuery, replacement) {
             if (file.isNull()) {
                 return callback(null, file);
             }
-
 
             function streamingReplace() {
                 if (file.isStream()) {
@@ -36,7 +35,6 @@ module.exports = function(searchQuery, replacement) {
                 return readable;
             }
 
-
             function ensureStream() {
 
                 if (file.isBuffer()) {
@@ -49,7 +47,7 @@ module.exports = function(searchQuery, replacement) {
                 streamingReplace();
                 callback(null, file);
             }
-
+            
             ensureStream();
         }
     });
