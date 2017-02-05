@@ -1,0 +1,12 @@
+{
+  "name": "gulp-findreplace-example",
+  "description": "An example that shows how to search/replace a file in place",
+  "version": "0.0.0",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.8.10"
+  },
+  "dependencies": {
+    "gulp-findreplace": "^1.0.0"
+  }
+}
