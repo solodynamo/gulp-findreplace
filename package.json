@@ -1,6 +1,6 @@
 {
   "name": "gulp-findreplace",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Gulp plugin to find and replace stuff.",
   "main": "index.js",
   "scripts": {
