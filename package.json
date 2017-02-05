@@ -1,0 +1,32 @@
+{
+  "name": "gulp-findreplace",
+  "version": "1.0.0",
+  "description": "Gulp plugin to find and replace stuff.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solodynamo/gulp-findreplace.git"
+  },
+  "keywords": [
+    "search",
+    "replace",
+    "gulp",
+    "replace",
+    "gulp",
+    "regex"
+  ],
+  "author": "solodynamo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solodynamo/gulp-findreplace/issues"
+  },
+  "homepage": "https://github.com/solodynamo/gulp-findreplace#readme",
+  "dependencies": {
+    "readable-stream": "^2.0.1",
+    "replacestream": "^4.0.0",
+    "through2": "~0.4.0"
+  }
+}
