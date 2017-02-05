@@ -8,7 +8,7 @@ var Readablee = require('readable-stream/readable');
 module.exports = function(searchQuery, replacement) {
     return new Transform({
         objectMode: true,
-        //enc:encoding file:index.html
+        //enc:encoding
         transform: function(file, enc, callback) {
 
             if (file.isNull()) {
@@ -18,7 +18,6 @@ module.exports = function(searchQuery, replacement) {
 
             function streamingReplace() {
                 if (file.isStream()) {
-                    console.log("File Is A Stream");
                     file.contents = file.contents.pipe(rs(searchQuery, replacement));
                     return;
                 }
