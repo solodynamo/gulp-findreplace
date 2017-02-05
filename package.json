@@ -15,8 +15,9 @@
     "replace",
     "gulp",
     "replace",
-    "gulp",
-    "regex"
+    "regex",
+    "findreplace",
+    "gulp-findreplace"
   ],
   "author": "solodynamo",
   "license": "MIT",
