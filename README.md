@@ -23,7 +23,7 @@ gulp.task('replaceIt', function(){
 ```
 ### String Replace
 ```javascript
-var freplace = require('gulp-replace');
+var freplace = require('gulp-findreplace');
 
 gulp.task('replaceIt', function(){
   gulp.src(['example.txt'])
