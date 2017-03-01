@@ -1,4 +1,4 @@
-# gulp-findreplace [![NPM version][npm-image]][npm-url] [![Build status][travis-image]][travis-url]
+# gulp-findreplace [![NPM version][npm-image]][npm-url] [![download-image]][npm-url] [![Build status][travis-image]][travis-url]
 > A gulp plugin that streamingly replaces matching strings with provided replacement string ⚡️
 
 ## Usage
@@ -64,3 +64,4 @@ Type: `String`
 [travis-image]: https://travis-ci.org/solodynamo/gulp-findreplace.svg?branch=master
 [npm-url]: https://www.npmjs.com/package/gulp-findreplace
 [npm-image]: https://badge.fury.io/js/gulp-findreplace.svg
+[download-image]: https://img.shields.io/badge/Downloads-200%2B-Pink.svg
